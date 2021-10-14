@@ -1,0 +1,26 @@
+syntax = "proto3";
+package game;
+service GameProto {
+  rpc PlayRequest (PlayGameRequest) returns (PlayGameResponse);
+}
+message PlayGameRequest {
+  FloatTuple windowSize = 1;
+  FloatTuple player1Texture = 2;
+  FloatTuple player2Texture = 3;
+  FloatTuple ballTexture = 4;
+}
+message PlayGameResponse {
+  FloatTuple player1Position = 1;
+  FloatTuple player2Position = 2;
+  uint32 playersCount = 3;
+  uint32 currentPlayerNumber = 4;
+  Ball ball = 5;
+}
+message Ball {
+  FloatTuple position = 1;
+  FloatTuple velocity = 2;
+}
+message FloatTuple {
+  float x = 1;
+  float y = 2;
+}
