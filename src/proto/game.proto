@@ -2,13 +2,29 @@ syntax = "proto3";
 package game;
 service GameProto {
   rpc PlayRequest (PlayGameRequest) returns (PlayGameResponse);
+  rpc WorldUpdateRequest (ClientActions) returns (WorldStatus);
 }
+
+message ClientActions {
+  uint32 playerNumber = 1;
+  uint32 clickedButton = 2;
+}
+
+message WorldStatus {
+  FloatTuple player1Position = 1;
+  FloatTuple player2Position = 2;
+  Ball ball = 3;
+  uint32 playersCount = 4;
+  uint32 winner = 5;
+}
+
 message PlayGameRequest {
   FloatTuple windowSize = 1;
   FloatTuple player1Texture = 2;
   FloatTuple player2Texture = 3;
   FloatTuple ballTexture = 4;
 }
+
 message PlayGameResponse {
   FloatTuple player1Position = 1;
   FloatTuple player2Position = 2;
@@ -16,10 +32,12 @@ message PlayGameResponse {
   uint32 currentPlayerNumber = 4;
   Ball ball = 5;
 }
+
 message Ball {
   FloatTuple position = 1;
   FloatTuple velocity = 2;
 }
+
 message FloatTuple {
   float x = 1;
   float y = 2;
