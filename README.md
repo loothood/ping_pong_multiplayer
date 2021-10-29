@@ -20,7 +20,7 @@ run client
 
 ``` cargo run --bin client ```
 
-run sedond client
+run seсond client
 
 ``` cargo run --bin client ```
 
