@@ -25,4 +25,5 @@ run sedond client
 ``` cargo run --bin client ```
 
 Play:
+
 ![ping pong](https://habrastorage.org/getpro/habr/upload_files/344/c1c/f43/344c1cf43c4e0d696d6068051a33ca7d.gif)
