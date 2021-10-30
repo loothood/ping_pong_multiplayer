@@ -6,7 +6,7 @@ Developed with Rust and GRPS.
 Game engine is tetra.
 Cotrollers: Up and Down buttons.
 
-To build on linux, install the folling libs:
+To build on linux, install the following libs:
 
 ``` sudo apt install libasound2-dev libsdl2-dev ```
 
@@ -20,7 +20,7 @@ run client:
 
 ``` cargo run --bin client ```
 
-run seсond client on the friend computer:
+run seсond client on the friend's computer in the same network:
 
 ``` cargo run --bin client ```
 
