@@ -10,6 +10,8 @@ To build on linux, install the following libs:
 
 ``` sudo apt install libasound2-dev libsdl2-dev ```
 
+To run, install `SDL` lib 
+
 Starting:
 
 run server: 
