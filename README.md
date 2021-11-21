@@ -6,11 +6,11 @@ Developed with Rust and GRPS.
 Game engine is tetra.
 Cotrollers: Up and Down buttons.
 
+To it run, install `SDL` lib for your OS.
+
 To build on linux, install the following libs:
 
 ``` sudo apt install libasound2-dev libsdl2-dev ```
-
-To run, install `SDL` lib 
 
 Starting:
 
